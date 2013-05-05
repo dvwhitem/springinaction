@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+                http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    
+    
+<context:annotation-config />    
+
+<!--
+  <bean id="duke" 
+      class="com.springinaction.springidol.Juggler" />
+
+
+
+  <bean id="poeticDuke"
+      class="com.springinaction.springidol.PoeticJuggler">
+    <constructor-arg value="15" />
+    <constructor-arg ref="sonnet29" />
+  </bean>
+
+  
+
+  <bean id="sonnet29"
+      class="com.springinaction.springidol.Sonnet29" />
+
+  
+
+  <bean id="kenny"
+      class="com.springinaction.springidol.Instrumentalist">
+    <property name="song" value="Jingle Bells" />
+  </bean>
+
+
+
+  <bean id="kenny2"
+      class="com.springinaction.springidol.Instrumentalist">
+    <property name="song" value="Jingle Bells" />
+    <property name="instrument" ref="saxophone" />
+  </bean>
+
+  <bean id="carl"
+      class="com.springinaction.springidol.Instrumentalist">
+    <property name="song" value="#{kenny.song}" />
+  </bean>
+
+  <bean id="stan"
+      class="com.springinaction.springidol.Instrumentalist">
+    <property name="song" value="#{systemProperties.STANS_SONG}" />
+  </bean>
+
+  <util:list id="songList">
+    <bean class="com.springinaction.springidol.Song">
+      <constructor-arg value="That Old Black Magic" />
+      <constructor-arg value="Arlen and Mercer" />
+      <constructor-arg value="That old black magic has me in its spell..." />
+    </bean>
+    <bean class="com.springinaction.springidol.Song">
+      <constructor-arg value="Every Little Thing She Does is Magic" />
+      <constructor-arg value="Sting" />
+      <constructor-arg value="Though Ive tried before to tell her..." />
+    </bean>
+    <bean class="com.springinaction.springidol.Song">
+      <constructor-arg value="Magic Carpet Ride" />
+      <constructor-arg value="Moreve and Kay" />
+      <constructor-arg value=
+        "I like to dream yes, yes, right between my sound machine..." />
+    </bean>
+  </util:list>
+
+  <bean id="magicSongBook"
+      class="com.springinaction.springidol.SongBook">
+    <constructor-arg value="#{songList.![title]}" />
+  </bean>
+
+  <bean id="ricky"
+      class="com.springinaction.springidol.Instrumentalist">
+    <property name="song" value="#{magicSongBook.pickASong()}" />
+  </bean>
+
+  <bean id="saxophone"
+      class="com.springinaction.springidol.Saxophone" />-->
+      
+<!--    <bean id="kenny2"
+          class="com.springinaction.springidol.Instrumentalist">
+        <property name="song" value="Jingle Bells" />
+        <property name="instrument" ref="saxophone" />
+    </bean>
+  
+    <bean id="saxophone"
+          class="com.springinaction.springidol.Saxophone" />-->
+          
+<!--    <bean id="duke" class="com.springinaction.springidol.PoeticJuggler"
+    autowire="constructor"
+    />
+    
+    <bean id="sonnet29"
+            class="com.springinaction.springidol.Sonnet29" />-->
+            
+<!--    <bean id="kenny"
+          class="com.springinaction.springidol.Instrumentalist" autowire="byType">
+        <property name="song" value="Jingle Bells"/>
+    </bean>
+    
+    <bean id="saxophone"
+              class="com.springinaction.springidol.Saxophone" />
+    
+    <bean id="piano" class="com.springinaction.springidol.Piano" primary="true" />-->
+    
+    <bean id="kenny"
+          class="com.springinaction.springidol.Instrumentalist">
+        <property name="song" value="Jingle Bells"/>
+    </bean>
+    
+    <bean id="saxophone"
+              class="com.springinaction.springidol.Saxophone" />
+    
+    <bean id="piano" class="com.springinaction.springidol.Piano" primary="true" />
+</beans>
