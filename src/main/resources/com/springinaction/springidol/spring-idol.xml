@@ -8,7 +8,9 @@
                 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
     
     
-<context:annotation-config />    
+<!--<context:annotation-config />    -->
+
+<context:component-scan base-package="com.springinaction.springidol" />
 
 <!--
   <bean id="duke" 
@@ -112,8 +114,9 @@
     
     <bean id="kenny"
           class="com.springinaction.springidol.Instrumentalist">
-        <property name="song" value="Jingle Bells"/>
     </bean>
+    
+    <bean id="systemProperties" class="com.springinaction.springidol.SystemProperties" />
     
     <bean id="saxophone"
               class="com.springinaction.springidol.Saxophone" />
@@ -121,4 +124,5 @@
     <bean id="piano" class="com.springinaction.springidol.Piano" />
     
     <bean id="guitar" class="com.springinaction.springidol.Guitar" />
+    
 </beans>

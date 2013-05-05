@@ -4,10 +4,14 @@
  */
 package com.springinaction.springidol;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+
 /**
  *
  * @author dv
  */
+//@Qualifier("stringed")
+@StringedInstrument
 public class Guitar implements Instrument {
 
     public Guitar() {}

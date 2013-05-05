@@ -9,4 +9,3 @@ public class Piano implements Instrument {
     System.out.println("PLINK PLINK PLINK");
   }
 }
-//<end id="piano_java" />
