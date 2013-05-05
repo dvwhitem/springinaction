@@ -112,17 +112,18 @@
     
     <bean id="piano" class="com.springinaction.springidol.Piano" primary="true" />-->
     
-    <bean id="kenny"
+<!--   <bean id="kenny"
           class="com.springinaction.springidol.Instrumentalist">
     </bean>
     
-    <bean id="systemProperties" class="com.springinaction.springidol.SystemProperties" />
+    <bean id="systemProperties" class="com.springinaction.springidol.SystemProperties" />-->
     
-    <bean id="saxophone"
+<!--    <bean id="saxophone"
               class="com.springinaction.springidol.Saxophone" />
     
     <bean id="piano" class="com.springinaction.springidol.Piano" />
     
-    <bean id="guitar" class="com.springinaction.springidol.Guitar" />
+    <bean id="guitar" class="com.springinaction.springidol.Guitar" />-->
     
+<!--    <bean id="systemProperties" class="com.springinaction.springidol.SystemProperties" />-->
 </beans>

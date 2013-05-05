@@ -20,7 +20,8 @@ public class SpringIdolMain {
         
        // Performer performer = (Performer) ctx.getBean("kenny2");
        // Performer performer = (Performer) ctx.getBean("duke");
-       Performer performer = (Performer) ctx.getBean("kenny"); 
+      // Performer performer = (Performer) ctx.getBean("duke2"); 
+        Performer performer = (Performer) ctx.getBean("kenny");
        performer.perform();
     }
 }

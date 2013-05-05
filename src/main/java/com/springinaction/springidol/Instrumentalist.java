@@ -4,7 +4,10 @@ package com.springinaction.springidol;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+//@Component("duke")
+@Component("kenny")
 public class Instrumentalist implements Performer {
   public Instrumentalist() {
   }
@@ -17,7 +20,7 @@ public class Instrumentalist implements Performer {
   @Value("#{systemProperties.myFavoriteSong}")
   private String song;
 
-  public void setSong(String song) { //<co id="co_injectSong"/>
+  public void setSong(String song) {
     this.song = song;
   }
 
