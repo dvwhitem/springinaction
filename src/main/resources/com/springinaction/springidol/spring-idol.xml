@@ -118,5 +118,7 @@
     <bean id="saxophone"
               class="com.springinaction.springidol.Saxophone" />
     
-    <bean id="piano" class="com.springinaction.springidol.Piano" primary="true" />
+    <bean id="piano" class="com.springinaction.springidol.Piano" />
+    
+    <bean id="guitar" class="com.springinaction.springidol.Guitar" />
 </beans>

@@ -1,4 +1,4 @@
-//<start id="piano_java" /> 
+
 package com.springinaction.springidol;
 
 public class Piano implements Instrument {
